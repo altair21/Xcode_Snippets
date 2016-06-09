@@ -4,25 +4,21 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if arch(i386) || arch(x86_64)
-// Simulator
-#else
-// Device
-#endif</string>
+	<string>#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 \
+												 green:((float)((rgbValue &amp; 0xFF00) &gt;&gt; 8))/255.0	\
+											      blue:((float)(rgbValue &amp; 0xFF))/255.0 alpha:1.0]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EC470119-44A0-4661-81CE-585AE41C54E5</string>
+	<string>EBB6B1C3-3D29-45CA-98DF-C6955F898F10</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Marco】Simulator and Device</string>
+	<string>【Marco】UIColorFromRGB</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
