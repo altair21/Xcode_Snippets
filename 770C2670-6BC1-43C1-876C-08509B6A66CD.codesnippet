@@ -7,18 +7,23 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 \
-												 green:((float)((rgbValue &amp; 0xFF00) &gt;&gt; 8))/255.0	\
-											      blue:((float)(rgbValue &amp; 0xFF))/255.0 alpha:1.0]</string>
+	<string>// A delay function
+func delay(seconds: Double, completion:()-&gt;()) {
+    let popTime = DispatchTime.now() + Double(Int64( Double(NSEC_PER_SEC) * seconds )) / Double(NSEC_PER_SEC)
+  
+    DispatchQueue.main.after(when: popTime) {
+        completion()
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EBB6B1C3-3D29-45CA-98DF-C6955F898F10</string>
+	<string>770C2670-6BC1-43C1-876C-08509B6A66CD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Marco】UIColorFromRGB</string>
+	<string>[Swift] Delay function</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
